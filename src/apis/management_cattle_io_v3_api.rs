@@ -89,7 +89,7 @@ pub enum CreateManagementCattleIoV3RoleTemplateSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionGlobalRoleSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -97,7 +97,7 @@ pub enum DeleteManagementCattleIoV3CollectionGlobalRoleSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -105,7 +105,7 @@ pub enum DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -113,7 +113,7 @@ pub enum DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindin
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -121,7 +121,7 @@ pub enum DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -129,7 +129,7 @@ pub enum DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindin
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3CollectionRoleTemplateSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -137,8 +137,8 @@ pub enum DeleteManagementCattleIoV3CollectionRoleTemplateSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3GlobalRoleSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -146,8 +146,8 @@ pub enum DeleteManagementCattleIoV3GlobalRoleSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3GlobalRoleBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -155,8 +155,8 @@ pub enum DeleteManagementCattleIoV3GlobalRoleBindingSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -164,8 +164,8 @@ pub enum DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3NamespacedProjectSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -173,8 +173,8 @@ pub enum DeleteManagementCattleIoV3NamespacedProjectSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -182,8 +182,8 @@ pub enum DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DeleteManagementCattleIoV3RoleTemplateSuccess {
-    Status200(models::IoK8sApimachineryPkgApisMetaV1Status),
-    Status202(models::IoK8sApimachineryPkgApisMetaV1Status),
+    Status200(kube::core::Status),
+    Status202(kube::core::Status),
     UnknownValue(serde_json::Value),
 }
 
@@ -796,2709 +796,2937 @@ pub enum ReplaceManagementCattleIoV3RoleTemplateError {
 
 /// Create a Cluster
 pub async fn create_management_cattle_io_v3_cluster(configuration: &configuration::Configuration, body: models::IoCattleManagementv3Cluster, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3ClusterSuccess>, Error<CreateManagementCattleIoV3ClusterError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_body = body;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/clusters", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/clusters", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3ClusterSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3ClusterSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3ClusterError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3ClusterError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a GlobalRole
 pub async fn create_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, body: models::IoCattleManagementv3GlobalRole, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3GlobalRoleSuccess>, Error<CreateManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a GlobalRoleBinding
 pub async fn create_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, body: models::IoCattleManagementv3GlobalRoleBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3GlobalRoleBindingSuccess>, Error<CreateManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a ClusterRoleTemplateBinding
 pub async fn create_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3ClusterRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a Project
 pub async fn create_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3Project, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedProjectSuccess>, Error<CreateManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a ProjectRoleTemplateBinding
 pub async fn create_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3ProjectRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// create a RoleTemplate
 pub async fn create_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, body: models::IoCattleManagementv3RoleTemplate, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3RoleTemplateSuccess>, Error<CreateManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::POST, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<CreateManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<CreateManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<CreateManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of GlobalRole
 pub async fn delete_management_cattle_io_v3_collection_global_role(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionGlobalRoleSuccess>, Error<DeleteManagementCattleIoV3CollectionGlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of GlobalRoleBinding
 pub async fn delete_management_cattle_io_v3_collection_global_role_binding(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionGlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionGlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of ClusterRoleTemplateBinding
 pub async fn delete_management_cattle_io_v3_collection_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of Project
 pub async fn delete_management_cattle_io_v3_collection_namespaced_project(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of ProjectRoleTemplateBinding
 pub async fn delete_management_cattle_io_v3_collection_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete collection of RoleTemplate
 pub async fn delete_management_cattle_io_v3_collection_role_template(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionRoleTemplateSuccess>, Error<DeleteManagementCattleIoV3CollectionRoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionRoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionRoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3CollectionRoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3CollectionRoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a GlobalRole
 pub async fn delete_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3GlobalRoleSuccess>, Error<DeleteManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a GlobalRoleBinding
 pub async fn delete_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3GlobalRoleBindingSuccess>, Error<DeleteManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a ClusterRoleTemplateBinding
 pub async fn delete_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a Project
 pub async fn delete_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedProjectSuccess>, Error<DeleteManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a ProjectRoleTemplateBinding
 pub async fn delete_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// delete a RoleTemplate
 pub async fn delete_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3RoleTemplateSuccess>, Error<DeleteManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_grace_period_seconds = grace_period_seconds;
+    let p_orphan_dependents = orphan_dependents;
+    let p_propagation_policy = propagation_policy;
+    let p_body = body;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::DELETE, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::DELETE, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = grace_period_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("gracePeriodSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_grace_period_seconds {
+        req_builder = req_builder.query(&[("gracePeriodSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = orphan_dependents {
-        local_var_req_builder = local_var_req_builder.query(&[("orphanDependents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_orphan_dependents {
+        req_builder = req_builder.query(&[("orphanDependents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = propagation_policy {
-        local_var_req_builder = local_var_req_builder.query(&[("propagationPolicy", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_propagation_policy {
+        req_builder = req_builder.query(&[("propagationPolicy", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<DeleteManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<DeleteManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<DeleteManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind ClusterRoleTemplateBinding
 pub async fn list_management_cattle_io_v3_cluster_role_template_binding_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/clusterroletemplatebindings", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/clusterroletemplatebindings", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// List objects of kind Cluster
 pub async fn list_management_cattle_io_v3_clusters(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ClustersSuccess>, Error<ListManagementCattleIoV3ClustersError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/clusters", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/clusters", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3ClustersSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ClustersSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3ClustersError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ClustersError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind GlobalRole
 pub async fn list_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3GlobalRoleSuccess>, Error<ListManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind GlobalRoleBinding
 pub async fn list_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ListManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind ClusterRoleTemplateBinding
 pub async fn list_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind Project
 pub async fn list_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedProjectSuccess>, Error<ListManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind ProjectRoleTemplateBinding
 pub async fn list_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", configuration.base_path, namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings", local_var_configuration.base_path, namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind Project
 pub async fn list_management_cattle_io_v3_project_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ProjectForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ProjectForAllNamespacesError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/projects", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/projects", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3ProjectForAllNamespacesSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ProjectForAllNamespacesSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3ProjectForAllNamespacesError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ProjectForAllNamespacesError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind ProjectRoleTemplateBinding
 pub async fn list_management_cattle_io_v3_project_role_template_binding_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/projectroletemplatebindings", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/projectroletemplatebindings", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// list objects of kind RoleTemplate
 pub async fn list_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3RoleTemplateSuccess>, Error<ListManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_pretty = pretty;
+    let p_allow_watch_bookmarks = allow_watch_bookmarks;
+    let p_continue = r#continue;
+    let p_field_selector = field_selector;
+    let p_label_selector = label_selector;
+    let p_limit = limit;
+    let p_resource_version = resource_version;
+    let p_resource_version_match = resource_version_match;
+    let p_send_initial_events = send_initial_events;
+    let p_timeout_seconds = timeout_seconds;
+    let p_watch = watch;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", configuration.base_path);
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates", local_var_configuration.base_path);
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = allow_watch_bookmarks {
-        local_var_req_builder = local_var_req_builder.query(&[("allowWatchBookmarks", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_allow_watch_bookmarks {
+        req_builder = req_builder.query(&[("allowWatchBookmarks", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = r#continue {
-        local_var_req_builder = local_var_req_builder.query(&[("continue", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_continue {
+        req_builder = req_builder.query(&[("continue", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_selector {
+        req_builder = req_builder.query(&[("fieldSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = label_selector {
-        local_var_req_builder = local_var_req_builder.query(&[("labelSelector", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_label_selector {
+        req_builder = req_builder.query(&[("labelSelector", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = limit {
-        local_var_req_builder = local_var_req_builder.query(&[("limit", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_limit {
+        req_builder = req_builder.query(&[("limit", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version_match {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersionMatch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version_match {
+        req_builder = req_builder.query(&[("resourceVersionMatch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = send_initial_events {
-        local_var_req_builder = local_var_req_builder.query(&[("sendInitialEvents", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_send_initial_events {
+        req_builder = req_builder.query(&[("sendInitialEvents", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = timeout_seconds {
-        local_var_req_builder = local_var_req_builder.query(&[("timeoutSeconds", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_timeout_seconds {
+        req_builder = req_builder.query(&[("timeoutSeconds", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = watch {
-        local_var_req_builder = local_var_req_builder.query(&[("watch", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_watch {
+        req_builder = req_builder.query(&[("watch", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ListManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ListManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ListManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified GlobalRole
 pub async fn patch_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3GlobalRoleSuccess>, Error<PatchManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified GlobalRoleBinding
 pub async fn patch_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3GlobalRoleBindingSuccess>, Error<PatchManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified ClusterRoleTemplateBinding
 pub async fn patch_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified Project
 pub async fn patch_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedProjectSuccess>, Error<PatchManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified ProjectRoleTemplateBinding
 pub async fn patch_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// partially update the specified RoleTemplate
 pub async fn patch_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3RoleTemplateSuccess>, Error<PatchManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
+    let p_force = force;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PATCH, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PATCH, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = force {
-        local_var_req_builder = local_var_req_builder.query(&[("force", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_force {
+        req_builder = req_builder.query(&[("force", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<PatchManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<PatchManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<PatchManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified GlobalRole
 pub async fn read_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3GlobalRoleSuccess>, Error<ReadManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified GlobalRoleBinding
 pub async fn read_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ReadManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified ClusterRoleTemplateBinding
 pub async fn read_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified Project
 pub async fn read_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedProjectSuccess>, Error<ReadManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified ProjectRoleTemplateBinding
 pub async fn read_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// read the specified RoleTemplate
 pub async fn read_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3RoleTemplateSuccess>, Error<ReadManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_pretty = pretty;
+    let p_resource_version = resource_version;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::GET, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = resource_version {
-        local_var_req_builder = local_var_req_builder.query(&[("resourceVersion", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_resource_version {
+        req_builder = req_builder.query(&[("resourceVersion", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReadManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReadManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReadManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified GlobalRole
 pub async fn replace_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3GlobalRole, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3GlobalRoleSuccess>, Error<ReplaceManagementCattleIoV3GlobalRoleError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalroles/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3GlobalRoleSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3GlobalRoleError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified GlobalRoleBinding
 pub async fn replace_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3GlobalRoleBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ReplaceManagementCattleIoV3GlobalRoleBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/globalrolebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3GlobalRoleBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3GlobalRoleBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified ClusterRoleTemplateBinding
 pub async fn replace_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3ClusterRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/clusterroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified Project
 pub async fn replace_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3Project, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedProjectSuccess>, Error<ReplaceManagementCattleIoV3NamespacedProjectError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projects/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedProjectSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedProjectError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified ProjectRoleTemplateBinding
 pub async fn replace_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3ProjectRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_namespace = namespace;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", configuration.base_path, name=crate::apis::urlencode(p_name), namespace=crate::apis::urlencode(p_namespace));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/namespaces/{namespace}/projectroletemplatebindings/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name), namespace=crate::apis::urlencode(namespace));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 
 /// replace the specified RoleTemplate
 pub async fn replace_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3RoleTemplate, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3RoleTemplateSuccess>, Error<ReplaceManagementCattleIoV3RoleTemplateError>> {
-    let local_var_configuration = configuration;
+    // add a prefix to parameters to efficiently prevent name collisions
+    let p_name = name;
+    let p_body = body;
+    let p_pretty = pretty;
+    let p_dry_run = dry_run;
+    let p_field_manager = field_manager;
+    let p_field_validation = field_validation;
 
-    let local_var_client = &local_var_configuration.client;
+    let uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", configuration.base_path, name=crate::apis::urlencode(p_name));
+    let mut req_builder = configuration.client.request(reqwest::Method::PUT, &uri_str);
 
-    let local_var_uri_str = format!("{}/apis/management.cattle.io/v3/roletemplates/{name}", local_var_configuration.base_path, name=crate::apis::urlencode(name));
-    let mut local_var_req_builder = local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
-
-    if let Some(ref local_var_str) = pretty {
-        local_var_req_builder = local_var_req_builder.query(&[("pretty", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_pretty {
+        req_builder = req_builder.query(&[("pretty", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = dry_run {
-        local_var_req_builder = local_var_req_builder.query(&[("dryRun", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_dry_run {
+        req_builder = req_builder.query(&[("dryRun", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_manager {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldManager", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_manager {
+        req_builder = req_builder.query(&[("fieldManager", &param_value.to_string())]);
     }
-    if let Some(ref local_var_str) = field_validation {
-        local_var_req_builder = local_var_req_builder.query(&[("fieldValidation", &local_var_str.to_string())]);
+    if let Some(ref param_value) = p_field_validation {
+        req_builder = req_builder.query(&[("fieldValidation", &param_value.to_string())]);
     }
-    if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
+    if let Some(ref user_agent) = configuration.user_agent {
+        req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
-    if let Some(ref local_var_apikey) = local_var_configuration.api_key {
-        let local_var_key = local_var_apikey.key.clone();
-        let local_var_value = match local_var_apikey.prefix {
-            Some(ref local_var_prefix) => format!("{} {}", local_var_prefix, local_var_key),
-            None => local_var_key,
+    if let Some(ref apikey) = configuration.api_key {
+        let key = apikey.key.clone();
+        let value = match apikey.prefix {
+            Some(ref prefix) => format!("{} {}", prefix, key),
+            None => key,
         };
-        local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
+        req_builder = req_builder.header("authorization", value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    req_builder = req_builder.json(&p_body);
 
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
+    let req = req_builder.build()?;
+    let resp = configuration.client.execute(req).await?;
 
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
+    let status = resp.status();
 
-    if !local_var_status.is_client_error() && !local_var_status.is_server_error() {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&local_var_content).ok();
-        let local_var_result = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Ok(local_var_result)
+    if !status.is_client_error() && !status.is_server_error() {
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3RoleTemplateSuccess> = serde_json::from_str(&content).ok();
+        Ok(ResponseContent { status, content, entity })
     } else {
-        let local_var_entity: Option<ReplaceManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
+        let content = resp.text().await?;
+        let entity: Option<ReplaceManagementCattleIoV3RoleTemplateError> = serde_json::from_str(&content).ok();
+        Err(Error::ResponseError(ResponseContent { status, content, entity }))
     }
 }
 

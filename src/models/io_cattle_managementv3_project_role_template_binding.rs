@@ -27,7 +27,7 @@ pub struct IoCattleManagementv3ProjectRoleTemplateBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
     /// ProjectName is the name of the project to which a subject is added. Immutable.
     #[serde(rename = "projectName")]
     pub project_name: String,

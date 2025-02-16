@@ -18,7 +18,7 @@ pub struct IoCattleManagementv3ProjectStatus {
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<models::IoCattleManagementv3ProjectStatusConditionsInner>>,
     #[serde(rename = "monitoringStatus", skip_serializing_if = "Option::is_none")]
-    pub monitoring_status: Option<Box<models::IoCattleManagementv3ProjectStatusMonitoringStatus>>,
+    pub monitoring_status: Option<models::IoCattleManagementv3ProjectStatusMonitoringStatus>,
     /// PodSecurityPolicyTemplateName is the pod security policy template associated with the project.
     #[serde(rename = "podSecurityPolicyTemplateId", skip_serializing_if = "Option::is_none")]
     pub pod_security_policy_template_id: Option<String>,

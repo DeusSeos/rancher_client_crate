@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **group_name** | Option<**String**> | GroupName is the name of the group subject added to the cluster. Immutable. | [optional]
 **group_principal_name** | Option<**String**> | GroupPrincipalName is the name of the group principal subject added to the cluster. Immutable. | [optional]
 **kind** | Option<**String**> | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds | [optional]
-**metadata** | Option<[**models::IoK8sApimachineryPkgApisMetaV1ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
+**metadata** | Option<[**kube::api::ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
 **role_template_name** | **String** | RoleTemplateName is the name of the role template that defines permissions to perform actions on resources in the cluster. Immutable. | 
 **user_name** | Option<**String**> | UserName is the name of the user subject added to the cluster. Immutable. | [optional]
 **user_principal_name** | Option<**String**> | UserPrincipalName is the name of the user principal subject added to the cluster. Immutable. | [optional]

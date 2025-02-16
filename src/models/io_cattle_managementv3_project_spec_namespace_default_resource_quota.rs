@@ -15,7 +15,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
 pub struct IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuota {
     #[serde(rename = "limit", skip_serializing_if = "Option::is_none")]
-    pub limit: Option<Box<models::IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuotaLimit>>,
+    pub limit: Option<models::IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuotaLimit>,
 }
 
 impl IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuota {

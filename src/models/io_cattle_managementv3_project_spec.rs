@@ -18,7 +18,7 @@ pub struct IoCattleManagementv3ProjectSpec {
     #[serde(rename = "clusterName")]
     pub cluster_name: String,
     #[serde(rename = "containerDefaultResourceLimit", skip_serializing_if = "Option::is_none")]
-    pub container_default_resource_limit: Option<Box<models::IoCattleManagementv3ProjectSpecContainerDefaultResourceLimit>>,
+    pub container_default_resource_limit: Option<models::IoCattleManagementv3ProjectSpecContainerDefaultResourceLimit>,
     /// Description is a human-readable description of the project.
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
@@ -29,9 +29,9 @@ pub struct IoCattleManagementv3ProjectSpec {
     #[serde(rename = "enableProjectMonitoring", skip_serializing_if = "Option::is_none")]
     pub enable_project_monitoring: Option<bool>,
     #[serde(rename = "namespaceDefaultResourceQuota", skip_serializing_if = "Option::is_none")]
-    pub namespace_default_resource_quota: Option<Box<models::IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuota>>,
+    pub namespace_default_resource_quota: Option<models::IoCattleManagementv3ProjectSpecNamespaceDefaultResourceQuota>,
     #[serde(rename = "resourceQuota", skip_serializing_if = "Option::is_none")]
-    pub resource_quota: Option<Box<models::IoCattleManagementv3ProjectSpecResourceQuota>>,
+    pub resource_quota: Option<models::IoCattleManagementv3ProjectSpecResourceQuota>,
 }
 
 impl IoCattleManagementv3ProjectSpec {

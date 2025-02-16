@@ -296,7 +296,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_global_role
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_global_role(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_global_role(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of GlobalRole
@@ -320,7 +320,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_global_role_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_global_role_binding(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_global_role_binding(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of GlobalRoleBinding
@@ -360,7 +360,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -376,7 +376,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_namespaced_cluster_role_template_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_namespaced_cluster_role_template_binding(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_namespaced_cluster_role_template_binding(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of ClusterRoleTemplateBinding
@@ -401,7 +401,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_namespaced_project
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_namespaced_project(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_namespaced_project(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of Project
@@ -442,7 +442,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -458,7 +458,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_namespaced_project_role_template_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_namespaced_project_role_template_binding(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_namespaced_project_role_template_binding(namespace, pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of ProjectRoleTemplateBinding
@@ -483,7 +483,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -499,7 +499,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_collection_role_template
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_collection_role_template(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
+> kube::core::Status delete_management_cattle_io_v3_collection_role_template(pretty, allow_watch_bookmarks, r#continue, field_selector, label_selector, limit, resource_version, resource_version_match, send_initial_events, timeout_seconds, watch)
 
 
 delete collection of RoleTemplate
@@ -523,7 +523,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -539,7 +539,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_global_role
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_global_role(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_global_role(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a GlobalRole
@@ -559,7 +559,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -575,7 +575,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_global_role_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_global_role_binding(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_global_role_binding(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a GlobalRoleBinding
@@ -595,7 +595,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -611,7 +611,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_namespaced_cluster_role_template_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_namespaced_cluster_role_template_binding(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_namespaced_cluster_role_template_binding(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a ClusterRoleTemplateBinding
@@ -632,7 +632,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -648,7 +648,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_namespaced_project
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_namespaced_project(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_namespaced_project(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a Project
@@ -669,7 +669,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -685,7 +685,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_namespaced_project_role_template_binding
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_namespaced_project_role_template_binding(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_namespaced_project_role_template_binding(name, namespace, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a ProjectRoleTemplateBinding
@@ -706,7 +706,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 
@@ -722,7 +722,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_management_cattle_io_v3_role_template
 
-> models::IoK8sApimachineryPkgApisMetaV1Status delete_management_cattle_io_v3_role_template(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
+> kube::core::Status delete_management_cattle_io_v3_role_template(name, pretty, dry_run, grace_period_seconds, orphan_dependents, propagation_policy, body)
 
 
 delete a RoleTemplate
@@ -742,7 +742,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**models::IoK8sApimachineryPkgApisMetaV1Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
+[**kube::core::Status**](ioK8sApimachineryPkgApisMetaV1Status.md)
 
 ### Authorization
 

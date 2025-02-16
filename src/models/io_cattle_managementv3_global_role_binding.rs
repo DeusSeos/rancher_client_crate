@@ -27,7 +27,7 @@ pub struct IoCattleManagementv3GlobalRoleBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
     /// UserName is the name of the user subject to be bound. Immutable.
     #[serde(rename = "userName", skip_serializing_if = "Option::is_none")]
     pub user_name: Option<String>,

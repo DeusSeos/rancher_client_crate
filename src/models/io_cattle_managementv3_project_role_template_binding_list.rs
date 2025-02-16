@@ -24,7 +24,7 @@ pub struct IoCattleManagementv3ProjectRoleTemplateBindingList {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ListMeta>>,
+    pub metadata: Option<kube::api::ListMeta>,
 }
 
 impl IoCattleManagementv3ProjectRoleTemplateBindingList {

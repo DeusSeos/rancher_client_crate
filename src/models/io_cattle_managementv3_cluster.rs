@@ -21,11 +21,11 @@ pub struct IoCattleManagementv3Cluster {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "spec")]
-    pub spec: Box<models::IoCattleManagementv3ClusterSpec>,
+    pub spec: models::IoCattleManagementv3ClusterSpec,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<Box<models::IoCattleManagementv3ClusterStatus>>,
+    pub status: Option<models::IoCattleManagementv3ClusterStatus>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
 }
 
 impl IoCattleManagementv3Cluster {
@@ -34,7 +34,7 @@ impl IoCattleManagementv3Cluster {
         IoCattleManagementv3Cluster {
             api_version: None,
             kind: None,
-            spec: Box::new(spec),
+            spec,
             status: None,
             metadata: None,
         }

@@ -21,11 +21,11 @@ pub struct IoCattleManagementv3Project {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
-    pub spec: Option<Box<models::IoCattleManagementv3ProjectSpec>>,
+    pub spec: Option<models::IoCattleManagementv3ProjectSpec>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<Box<models::IoCattleManagementv3ProjectStatus>>,
+    pub status: Option<models::IoCattleManagementv3ProjectStatus>,
 }
 
 impl IoCattleManagementv3Project {

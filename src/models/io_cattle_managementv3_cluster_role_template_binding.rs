@@ -30,7 +30,7 @@ pub struct IoCattleManagementv3ClusterRoleTemplateBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
     /// RoleTemplateName is the name of the role template that defines permissions to perform actions on resources in the cluster. Immutable.
     #[serde(rename = "roleTemplateName")]
     pub role_template_name: String,

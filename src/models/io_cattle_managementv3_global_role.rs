@@ -33,7 +33,7 @@ pub struct IoCattleManagementv3GlobalRole {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<kube::api::ObjectMeta>,
     /// NewUserDefault specifies that all new users created should be bound to this GlobalRole if true.
     #[serde(rename = "newUserDefault", skip_serializing_if = "Option::is_none")]
     pub new_user_default: Option<bool>,

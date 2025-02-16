@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **hidden** | Option<**bool**> | Hidden if true informs the Rancher UI not to display this RoleTemplate. Default to false. | [optional]
 **kind** | Option<**String**> | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds | [optional]
 **locked** | Option<**bool**> | Locked if true, new bindings will not be able to use this RoleTemplate. Default to false. | [optional]
-**metadata** | Option<[**models::IoK8sApimachineryPkgApisMetaV1ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
+**metadata** | Option<[**kube::api::ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
 **project_creator_default** | Option<**bool**> | ProjectCreatorDefault if true, a binding with this RoleTemplate will be created for a user when they create a new project. ProjectCreatorDefault is only evaluated if the context of the RoleTemplate is set to project. Default to false. | [optional]
 **role_template_names** | Option<**Vec<String>**> | RoleTemplateNames list of RoleTemplate names that this RoleTemplate will inherit. This RoleTemplate will grant all rules defined in an inherited RoleTemplate. Inherited RoleTemplates must already exist. | [optional]
 **rules** | Option<[**Vec<models::IoCattleManagementv3GlobalRoleRulesInner>**](ioCattleManagementv3GlobalRole_rules_inner.md)> | Rules hold all the PolicyRules for this RoleTemplate. | [optional]
