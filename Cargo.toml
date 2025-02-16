@@ -35,7 +35,7 @@ url = "^2.5"
 uuid = { version = "^1.8", features = ["serde", "v4"] }
 reqwest = { version = "^0.12", features = ["json", "multipart"] }
 reqwest-middleware = { version = "^0.3", features = ["json", "multipart"] }
-kube = { version = "0.98.0", features = ["runtime", "derive"] }
+kube =  "0.98.0"
 
 
 [dev-dependencies]
