@@ -37,6 +37,9 @@ reqwest = { version = "^0.12", features = ["json", "multipart"] }
 reqwest-middleware = { version = "^0.3", features = ["json", "multipart"] }
 kube =  "0.98.0"
 
-
 [dev-dependencies]
-k8s-openapi = { version = "0.24.0", features = ["latest"] }
+k8s-openapi = { version = "0.24.0", features = ["v1_32"] }
+
+
+[features]
+__check = ["k8s-openapi/v1_32"]
