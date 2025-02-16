@@ -29,7 +29,7 @@ pub struct IoK8sApimachineryPkgApisMetaV1StatusDetails {
     /// If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.
     #[serde(rename = "retryAfterSeconds", skip_serializing_if = "Option::is_none")]
     pub retry_after_seconds: Option<i32>,
-    /// UID of the resource. (when there is a single resource which can be described). More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids
+    /// UID of the resource. (when there is a single resource which can be described). More info: <https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids>
     #[serde(rename = "uid", skip_serializing_if = "Option::is_none")]
     pub uid: Option<String>,
 }
