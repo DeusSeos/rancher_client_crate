@@ -28,6 +28,40 @@ pub struct IoCattleManagementv3Project {
     pub status: Option<models::IoCattleManagementv3ProjectStatus>,
 }
 
+
+impl kube::Resource for IoCattleManagementv3Project {
+    type DynamicType = ();
+
+    type Scope = ();
+
+    fn kind(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("Project")
+    }
+
+    fn group(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("management.cattle.io")
+    }
+
+    fn version(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("v3")
+    }
+
+    fn plural(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("projects")
+    }
+
+
+    fn meta(&self) -> &kube::api::ObjectMeta {
+        self.metadata.as_ref().unwrap()
+    }
+
+    fn meta_mut(&mut self) -> &mut kube::api::ObjectMeta {
+        self.metadata.as_mut().unwrap()
+    }
+
+}
+
+
 impl IoCattleManagementv3Project {
     /// Project is a group of namespaces. Projects are used to create a multi-tenant environment within a Kubernetes cluster by managing namespace operations, such as role assignments or quotas, as a group.
     pub fn new() -> IoCattleManagementv3Project {

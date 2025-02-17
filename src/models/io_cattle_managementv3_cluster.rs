@@ -9,6 +9,7 @@
  */
 
 use crate::models;
+use kube::Resource;
 use serde::{Deserialize, Serialize};
 
 /// IoCattleManagementv3Cluster : Cluster is a representation of a Rancher Kubernetes cluster.
@@ -26,6 +27,41 @@ pub struct IoCattleManagementv3Cluster {
     pub status: Option<models::IoCattleManagementv3ClusterStatus>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
     pub metadata: Option<kube::api::ObjectMeta>,
+}
+
+impl Resource for IoCattleManagementv3Cluster {
+
+    type DynamicType = ();
+
+    type Scope = ();
+
+    fn kind(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("Cluster")
+    }
+
+    fn group(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("management.cattle.io")
+    }
+
+    fn version(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("v3")
+    }
+
+    fn plural(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("clusters")
+    }
+
+
+    fn meta(&self) -> &kube::api::ObjectMeta {
+        self.metadata.as_ref().unwrap()
+    }
+
+    fn meta_mut(&mut self) -> &mut kube::api::ObjectMeta {
+        self.metadata.as_mut().unwrap()
+    }
+
+
+
 }
 
 impl IoCattleManagementv3Cluster {

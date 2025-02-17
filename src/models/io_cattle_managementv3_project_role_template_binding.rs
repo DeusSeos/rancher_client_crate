@@ -45,6 +45,37 @@ pub struct IoCattleManagementv3ProjectRoleTemplateBinding {
     pub user_principal_name: Option<String>,
 }
 
+impl kube::Resource for IoCattleManagementv3ProjectRoleTemplateBinding {
+    type DynamicType = ();
+
+    type Scope = ();
+
+    fn kind(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("ProjectRoleTemplateBinding")
+    }
+
+    fn group(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("management.cattle.io")
+    }
+
+    fn version(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("v3")
+    }
+
+    fn plural(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("projectroletemplatebindings")
+    }
+    
+    fn meta(&self) -> &kube::api::ObjectMeta {
+        self.metadata.as_ref().unwrap()
+    }
+    
+    fn meta_mut(&mut self) -> &mut kube::api::ObjectMeta {
+        self.metadata.as_mut().unwrap()
+    }
+
+}
+
 impl IoCattleManagementv3ProjectRoleTemplateBinding {
     /// ProjectRoleTemplateBinding is the object representing membership of a subject in a project with permissions specified by a given role template.
     pub fn new(project_name: String, role_template_name: String) -> IoCattleManagementv3ProjectRoleTemplateBinding {

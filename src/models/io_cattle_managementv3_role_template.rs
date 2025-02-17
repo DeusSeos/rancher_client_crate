@@ -60,6 +60,39 @@ pub struct IoCattleManagementv3RoleTemplate {
     pub rules: Option<Vec<models::IoCattleManagementv3GlobalRoleRulesInner>>,
 }
 
+impl kube::Resource for IoCattleManagementv3RoleTemplate {
+    type DynamicType = ();
+
+    type Scope = ();
+
+    fn kind(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("RoleTemplate")
+    }
+
+    fn group(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("management.cattle.io")
+    }
+
+    fn version(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("v3")
+    }
+
+    fn plural(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("roletemplates")
+    }
+    
+    fn meta(&self) -> &kube::api::ObjectMeta {
+        self.metadata.as_ref().unwrap()
+    }
+    
+    fn meta_mut(&mut self) -> &mut kube::api::ObjectMeta {
+        self.metadata.as_mut().unwrap()
+    }
+
+       
+}
+
+
 impl IoCattleManagementv3RoleTemplate {
     /// RoleTemplate holds configuration for a template that is used to create kubernetes Roles and ClusterRoles (in the rbac.authorization.k8s.io group) for a cluster or project.
     pub fn new() -> IoCattleManagementv3RoleTemplate {
