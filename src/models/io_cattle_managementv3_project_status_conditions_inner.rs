@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectStatusConditionsInner : ProjectCondition is the status of an aspect of the project.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectStatusConditionsInner {
     /// Last time the condition transitioned from one status to another.
     #[serde(rename = "lastTransitionTime", skip_serializing_if = "Option::is_none")]

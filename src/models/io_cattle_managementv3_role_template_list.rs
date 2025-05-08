@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3RoleTemplateList : RoleTemplateList is a list of RoleTemplate
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3RoleTemplateList {
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -24,7 +25,8 @@ pub struct IoCattleManagementv3RoleTemplateList {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ListMeta>>,
+    #[serde_diff(opaque)]
+    pub  metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ListMeta>>,
 }
 
 impl IoCattleManagementv3RoleTemplateList {

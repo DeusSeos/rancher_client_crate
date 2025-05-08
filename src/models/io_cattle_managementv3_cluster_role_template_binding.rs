@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ClusterRoleTemplateBinding : ClusterRoleTemplateBinding is the object representing membership of a subject in a cluster with permissions specified by a given role template.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ClusterRoleTemplateBinding {
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -30,7 +31,8 @@ pub struct IoCattleManagementv3ClusterRoleTemplateBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    #[serde_diff(opaque)]
+    pub  metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
     /// RoleTemplateName is the name of the role template that defines permissions to perform actions on resources in the cluster. Immutable.
     #[serde(rename = "roleTemplateName")]
     pub role_template_name: String,

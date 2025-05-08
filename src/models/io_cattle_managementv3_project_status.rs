@@ -10,14 +10,16 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectStatus : Status is the most recently observed status of the project.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectStatus {
     /// Conditions are a set of indicators about aspects of the project.
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<models::IoCattleManagementv3ProjectStatusConditionsInner>>,
     #[serde(rename = "monitoringStatus", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub monitoring_status: Option<Box<models::IoCattleManagementv3ProjectStatusMonitoringStatus>>,
     /// PodSecurityPolicyTemplateName is the pod security policy template associated with the project.
     #[serde(rename = "podSecurityPolicyTemplateId", skip_serializing_if = "Option::is_none")]

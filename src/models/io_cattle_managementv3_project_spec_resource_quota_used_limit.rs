@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectSpecResourceQuotaUsedLimit : UsedLimit is the currently allocated quota for all namespaces in the project.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectSpecResourceQuotaUsedLimit {
     /// ConfigMaps is the total number of ReplicationControllers that can exist in the namespace.
     #[serde(rename = "configMaps", skip_serializing_if = "Option::is_none")]

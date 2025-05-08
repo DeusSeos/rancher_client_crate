@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3GlobalRole : GlobalRole defines rules that can be applied to the local cluster and or every downstream cluster.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3GlobalRole {
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -33,7 +34,8 @@ pub struct IoCattleManagementv3GlobalRole {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    #[serde_diff(opaque)]
+    pub  metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
     /// NewUserDefault specifies that all new users created should be bound to this GlobalRole if true.
     #[serde(rename = "newUserDefault", skip_serializing_if = "Option::is_none")]
     pub new_user_default: Option<bool>,

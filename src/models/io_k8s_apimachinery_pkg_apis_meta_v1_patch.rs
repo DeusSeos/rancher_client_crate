@@ -10,6 +10,7 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoK8sApimachineryPkgApisMetaV1Patch : Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.
 /// Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.

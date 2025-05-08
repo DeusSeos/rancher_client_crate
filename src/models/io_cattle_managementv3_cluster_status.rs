@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ClusterStatus : Status is the most recently observed status of the cluster.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ClusterStatus {
     #[serde(rename = "aadClientCertSecret", skip_serializing_if = "Option::is_none")]
     pub aad_client_cert_secret: Option<String>,
@@ -23,42 +24,53 @@ pub struct IoCattleManagementv3ClusterStatus {
     #[serde(rename = "agentImage", skip_serializing_if = "Option::is_none")]
     pub agent_image: Option<String>,
     #[serde(rename = "aksStatus", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub aks_status: Option<serde_json::Value>,
     #[serde(rename = "allocatable", skip_serializing_if = "Option::is_none")]
     pub allocatable: Option<std::collections::HashMap<String, String>>,
     #[serde(rename = "apiEndpoint", skip_serializing_if = "Option::is_none")]
     pub api_endpoint: Option<String>,
     #[serde(rename = "appliedAgentEnvVars", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub applied_agent_env_vars: Option<Vec<serde_json::Value>>,
     #[serde(rename = "appliedClusterAgentDeploymentCustomization", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub applied_cluster_agent_deployment_customization: Option<serde_json::Value>,
     #[serde(rename = "appliedEnableNetworkPolicy", skip_serializing_if = "Option::is_none")]
     pub applied_enable_network_policy: Option<bool>,
     #[serde(rename = "appliedSpec", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub applied_spec: Option<serde_json::Value>,
     #[serde(rename = "authImage", skip_serializing_if = "Option::is_none")]
     pub auth_image: Option<String>,
     #[serde(rename = "caCert", skip_serializing_if = "Option::is_none")]
     pub ca_cert: Option<String>,
     #[serde(rename = "capabilities", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub capabilities: Option<serde_json::Value>,
     #[serde(rename = "capacity", skip_serializing_if = "Option::is_none")]
     pub capacity: Option<std::collections::HashMap<String, String>>,
     #[serde(rename = "certificatesExpiration", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub certificates_expiration: Option<std::collections::HashMap<String, serde_json::Value>>,
     #[serde(rename = "componentStatuses", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub component_statuses: Option<Vec<serde_json::Value>>,
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub conditions: Option<Vec<serde_json::Value>>,
     #[serde(rename = "currentCisRunName", skip_serializing_if = "Option::is_none")]
     pub current_cis_run_name: Option<String>,
     #[serde(rename = "driver", skip_serializing_if = "Option::is_none")]
     pub driver: Option<String>,
     #[serde(rename = "eksStatus", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub eks_status: Option<serde_json::Value>,
     #[serde(rename = "failedSpec", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub failed_spec: Option<serde_json::Value>,
     #[serde(rename = "gkeStatus", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub gke_status: Option<serde_json::Value>,
     #[serde(rename = "istioEnabled", skip_serializing_if = "Option::is_none")]
     pub istio_enabled: Option<bool>,
@@ -83,6 +95,7 @@ pub struct IoCattleManagementv3ClusterStatus {
     #[serde(rename = "serviceAccountTokenSecret", skip_serializing_if = "Option::is_none")]
     pub service_account_token_secret: Option<String>,
     #[serde(rename = "version", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub version: Option<serde_json::Value>,
     #[serde(rename = "virtualCenterSecret", skip_serializing_if = "Option::is_none")]
     pub virtual_center_secret: Option<String>,

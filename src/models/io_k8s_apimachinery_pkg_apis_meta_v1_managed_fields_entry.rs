@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoK8sApimachineryPkgApisMetaV1ManagedFieldsEntry : ManagedFieldsEntry is a workflow-id, a FieldSet and the group version of the resource that the fieldset applies to.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoK8sApimachineryPkgApisMetaV1ManagedFieldsEntry {
     /// APIVersion defines the version of this resource that this field set applies to. The format is \"group/version\" just like the top-level APIVersion field. It is necessary to track the version of a field set because it cannot be automatically converted.
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -22,6 +23,7 @@ pub struct IoK8sApimachineryPkgApisMetaV1ManagedFieldsEntry {
     pub fields_type: Option<String>,
     /// FieldsV1 stores a set of fields in a data structure like a Trie, in JSON format.  Each key is either a '.' representing the field itself, and will always map to an empty set, or a string representing a sub-field or item. The string will follow one of these four formats: 'f:<name>', where <name> is the name of a field in a struct, or key in a map 'v:<value>', where <value> is the exact json formatted value of a list item 'i:<index>', where <index> is position of a item in a list 'k:<keys>', where <keys> is a map of  a list item's key fields to their unique values If a key maps to an empty Fields value, the field that key represents is part of the set.  The exact format is defined in sigs.k8s.io/structured-merge-diff
     #[serde(rename = "fieldsV1", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub fields_v1: Option<serde_json::Value>,
     /// Manager is an identifier of the workflow managing these fields.
     #[serde(rename = "manager", skip_serializing_if = "Option::is_none")]

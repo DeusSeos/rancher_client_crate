@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoK8sApimachineryPkgApisMetaV1Preconditions : Preconditions must be fulfilled before an operation (update, delete, etc.) is carried out.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoK8sApimachineryPkgApisMetaV1Preconditions {
     /// Specifies the target ResourceVersion
     #[serde(rename = "resourceVersion", skip_serializing_if = "Option::is_none")]

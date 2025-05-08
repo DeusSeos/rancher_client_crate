@@ -10,13 +10,16 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectSpecResourceQuota : ResourceQuota is a specification for the total amount of quota for standard resources that will be shared by all namespaces in the project. Must provide NamespaceDefaultResourceQuota if ResourceQuota is specified. See https://kubernetes.io/docs/concepts/policy/resource-quotas/ for more details.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectSpecResourceQuota {
     #[serde(rename = "limit", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub limit: Option<Box<models::IoCattleManagementv3ProjectSpecResourceQuotaLimit>>,
     #[serde(rename = "usedLimit", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(skip)]
     pub used_limit: Option<Box<models::IoCattleManagementv3ProjectSpecResourceQuotaUsedLimit>>,
 }
 
