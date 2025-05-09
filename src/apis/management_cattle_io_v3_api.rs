@@ -9,7 +9,7 @@
  */
 
 
-use reqwest;
+use reqwest::{self, header::{HeaderValue, CONTENT_TYPE}};
 use serde::{Deserialize, Serialize};
 use crate::{apis::ResponseContent, models};
 use super::{Error, configuration};
@@ -2643,7 +2643,7 @@ pub async fn patch_management_cattle_io_v3_global_role(configuration: &configura
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -2697,7 +2697,7 @@ pub async fn patch_management_cattle_io_v3_global_role_binding(configuration: &c
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -2751,7 +2751,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_cluster_role_template_bind
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -2805,7 +2805,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_project(configuration: &co
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -2859,7 +2859,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_project_role_template_bind
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -2913,7 +2913,7 @@ pub async fn patch_management_cattle_io_v3_role_template(configuration: &configu
         };
         local_var_req_builder = local_var_req_builder.header("authorization", local_var_value);
     };
-    local_var_req_builder = local_var_req_builder.json(&body);
+    local_var_req_builder = local_var_req_builder.header(CONTENT_TYPE, HeaderValue::from_static("application/json-patch+json")).json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
