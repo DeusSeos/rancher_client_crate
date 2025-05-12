@@ -29,7 +29,7 @@ pub struct IoCattleManagementv3Cluster {
     pub status: Option<Box<models::IoCattleManagementv3ClusterStatus>>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
     #[serde_diff(opaque)]
-    pub metadata: Option<Box<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>>,
+    pub metadata: Option<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>,
 }
 
 impl IoCattleManagementv3Cluster {
