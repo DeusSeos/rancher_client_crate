@@ -18,7 +18,7 @@ pub struct IoK8sApimachineryPkgApisMetaV1ObjectMeta {
     /// Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
     #[serde(rename = "annotations", skip_serializing_if = "Option::is_none")]
     #[serde_diff(skip)]
-    pub annotations: Option<Box<std::collections::HashMap<String, String>>>,
+    pub annotations: Option<std::collections::HashMap<String, String>>,
     /// Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
     #[serde(rename = "creationTimestamp", skip_serializing_if = "Option::is_none")]
     #[serde_diff(skip)]
@@ -44,7 +44,7 @@ pub struct IoK8sApimachineryPkgApisMetaV1ObjectMeta {
     /// Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels
     #[serde(rename = "labels", skip_serializing_if = "Option::is_none")]
     #[serde_diff(skip)]
-    pub labels: Option<Box<std::collections::HashMap<String, String>>>,
+    pub labels: Option<std::collections::HashMap<String, String>>,
     /// ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.
     #[serde(rename = "managedFields", skip_serializing_if = "Option::is_none")]
     #[serde_diff(skip)]
