@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3Project : Project is a group of namespaces. Projects are used to create a multi-tenant environment within a Kubernetes cluster by managing namespace operations, such as role assignments or quotas, as a group.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3Project {
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -21,11 +22,13 @@ pub struct IoCattleManagementv3Project {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<kube::api::ObjectMeta>,
+    pub  metadata: Option<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
     pub spec: Option<models::IoCattleManagementv3ProjectSpec>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<models::IoCattleManagementv3ProjectStatus>,
+    #[serde_diff(opaque)]
+    #[serde_diff(skip)]
+    pub status: Option<Box<models::IoCattleManagementv3ProjectStatus>>,
 }
 
 

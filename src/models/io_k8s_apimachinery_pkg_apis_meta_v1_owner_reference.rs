@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoK8sApimachineryPkgApisMetaV1OwnerReference : OwnerReference contains enough information to let you identify an owning object. An owning object must be in the same namespace as the dependent, or be cluster-scoped, so there is no namespace field.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoK8sApimachineryPkgApisMetaV1OwnerReference {
     /// API version of the referent.
     #[serde(rename = "apiVersion")]

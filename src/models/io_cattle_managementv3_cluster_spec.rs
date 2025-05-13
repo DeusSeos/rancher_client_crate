@@ -10,25 +10,33 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ClusterSpec : Spec is the specification of the desired configurationi of the cluster.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ClusterSpec {
     #[serde(rename = "agentEnvVars", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub agent_env_vars: Option<Vec<serde_json::Value>>,
     #[serde(rename = "agentImageOverride", skip_serializing_if = "Option::is_none")]
     pub agent_image_override: Option<String>,
     #[serde(rename = "aksConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub aks_config: Option<serde_json::Value>,
     #[serde(rename = "amazonElasticContainerServiceConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub amazon_elastic_container_service_config: Option<std::collections::HashMap<String, serde_json::Value>>,
     #[serde(rename = "answers", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub answers: Option<serde_json::Value>,
     #[serde(rename = "azureKubernetesServiceConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub azure_kubernetes_service_config: Option<std::collections::HashMap<String, serde_json::Value>>,
     #[serde(rename = "clusterAgentDeploymentCustomization", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub cluster_agent_deployment_customization: Option<serde_json::Value>,
     #[serde(rename = "clusterSecrets", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub cluster_secrets: Option<serde_json::Value>,
     #[serde(rename = "clusterTemplateId", skip_serializing_if = "Option::is_none")]
     pub cluster_template_id: Option<String>,
@@ -50,32 +58,43 @@ pub struct IoCattleManagementv3ClusterSpec {
     #[serde(rename = "dockerRootDir", skip_serializing_if = "Option::is_none")]
     pub docker_root_dir: Option<String>,
     #[serde(rename = "eksConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub eks_config: Option<serde_json::Value>,
     #[serde(rename = "enableNetworkPolicy", skip_serializing_if = "Option::is_none")]
     pub enable_network_policy: Option<bool>,
     #[serde(rename = "fleetAgentDeploymentCustomization", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub fleet_agent_deployment_customization: Option<serde_json::Value>,
     #[serde(rename = "fleetWorkspaceName", skip_serializing_if = "Option::is_none")]
     pub fleet_workspace_name: Option<String>,
     #[serde(rename = "genericEngineConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub generic_engine_config: Option<std::collections::HashMap<String, serde_json::Value>>,
     #[serde(rename = "gkeConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub gke_config: Option<serde_json::Value>,
     #[serde(rename = "googleKubernetesEngineConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub google_kubernetes_engine_config: Option<std::collections::HashMap<String, serde_json::Value>>,
     #[serde(rename = "importedConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub imported_config: Option<serde_json::Value>,
     #[serde(rename = "internal", skip_serializing_if = "Option::is_none")]
     pub internal: Option<bool>,
     #[serde(rename = "k3sConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub k3s_config: Option<serde_json::Value>,
     #[serde(rename = "localClusterAuthEndpoint", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub local_cluster_auth_endpoint: Option<serde_json::Value>,
     #[serde(rename = "questions", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub questions: Option<Vec<serde_json::Value>>,
     #[serde(rename = "rancherKubernetesEngineConfig", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub rancher_kubernetes_engine_config: Option<serde_json::Value>,
     #[serde(rename = "rke2Config", skip_serializing_if = "Option::is_none")]
+    #[serde_diff(opaque)]
     pub rke2_config: Option<serde_json::Value>,
     #[serde(rename = "windowsPreferedCluster", skip_serializing_if = "Option::is_none")]
     pub windows_prefered_cluster: Option<bool>,

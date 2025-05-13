@@ -1,6 +1,6 @@
 [package]
 name = "rancher_client"
-version = "1.0.4"
+version = "1.0.5"
 authors = ["OpenAPI Generator team and contributors"]
 description = "Rancher API client for Rust using OpenAPI Generator and kube"
 repository = "https://github.com/DeusSeos/rancher_client_crate"
@@ -29,22 +29,11 @@ exclude = [
 
 [dependencies]
 serde = { version = "^1.0", features = ["derive"] }
+serde-diff = "0.4"
 serde_json = "^1.0"
 serde_repr = "^0.1"
 url = "^2.5"
 uuid = { version = "^1.8", features = ["serde", "v4"] }
 reqwest = { version = "^0.12", features = ["json", "multipart"] }
 reqwest-middleware = { version = "^0.3", features = ["json", "multipart"] }
-kube = { version = "0.98.0", default-features = false, features = ["client"]}
-k8s-openapi = { version = "0.24.0", default-features = false }
-
-[dev-dependencies]
-k8s-openapi = { version = "0.24.0", features = ["v1_31"] }
-
-
-[features]
-k8s_openapi_compat = ["k8s-openapi/v1_31"]
-
-
-[package.metadata.docs.rs]
-features = ["k8s_openapi_compat"]
+async-backtrace = "0.2.7"

@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoK8sApimachineryPkgApisMetaV1StatusDetails : StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoK8sApimachineryPkgApisMetaV1StatusDetails {
     /// The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
     #[serde(rename = "causes", skip_serializing_if = "Option::is_none")]

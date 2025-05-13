@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectStatusMonitoringStatus : MonitoringStatus is the status of the Monitoring V1 app.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectStatusMonitoringStatus {
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<models::IoCattleManagementv3ProjectStatusMonitoringStatusConditionsInner>>,

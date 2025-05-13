@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectSpecContainerDefaultResourceLimit : ContainerDefaultResourceLimit is a specification for the default LimitRange for the namespace. See https://kubernetes.io/docs/concepts/policy/limit-range/ for more details.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectSpecContainerDefaultResourceLimit {
     /// LimitsCPU is the CPU limits across all pods in a non-terminal state.
     #[serde(rename = "limitsCpu", skip_serializing_if = "Option::is_none")]

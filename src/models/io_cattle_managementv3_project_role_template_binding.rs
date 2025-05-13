@@ -10,9 +10,10 @@
 
 use crate::models;
 use serde::{Deserialize, Serialize};
+use serde_diff::SerdeDiff;
 
 /// IoCattleManagementv3ProjectRoleTemplateBinding : ProjectRoleTemplateBinding is the object representing membership of a subject in a project with permissions specified by a given role template.
-#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize, SerdeDiff)]
 pub struct IoCattleManagementv3ProjectRoleTemplateBinding {
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
@@ -27,7 +28,8 @@ pub struct IoCattleManagementv3ProjectRoleTemplateBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<kube::api::ObjectMeta>,
+    #[serde_diff(opaque)]
+    pub  metadata: Option<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>,
     /// ProjectName is the name of the project to which a subject is added. Immutable.
     #[serde(rename = "projectName")]
     pub project_name: String,
