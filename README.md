@@ -106,7 +106,7 @@ Class | Method | HTTP request | Description
  - [IoCattleManagementv3RoleTemplate](docs/IoCattleManagementv3RoleTemplate.md)
  - [IoCattleManagementv3RoleTemplateList](docs/IoCattleManagementv3RoleTemplateList.md)
  - [IoK8sApimachineryPkgApisMetaV1DeleteOptions](docs/IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)
- - [IoK8sApimachineryPkgApisMetaV1ListMeta](docs/IoK8sApimachineryPkgApisMetaV1ListMeta.md)
+   - [IoK8sApimachineryPkgApisMetaV1ListMeta](docs/IoK8sApimachineryPkgApisMetaV1ListMeta.md)
  - [IoK8sApimachineryPkgApisMetaV1ManagedFieldsEntry](docs/IoK8sApimachineryPkgApisMetaV1ManagedFieldsEntry.md)
  - [IoK8sApimachineryPkgApisMetaV1ObjectMeta](docs/IoK8sApimachineryPkgApisMetaV1ObjectMeta.md)
  - [IoK8sApimachineryPkgApisMetaV1OwnerReference](docs/IoK8sApimachineryPkgApisMetaV1OwnerReference.md)

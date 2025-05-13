@@ -44,6 +44,40 @@ pub struct IoCattleManagementv3GlobalRole {
     pub rules: Option<Vec<models::IoCattleManagementv3GlobalRoleRulesInner>>,
 }
 
+
+impl kube::Resource for IoCattleManagementv3GlobalRole {
+    type DynamicType = ();
+
+    type Scope = ();
+
+    fn kind(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("GlobalRole")
+    }
+
+    fn group(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("management.cattle.io")
+    }
+
+    fn version(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("v3")
+    }
+
+    fn plural(_dt: &Self::DynamicType) -> std::borrow::Cow<'_, str> {
+        std::borrow::Cow::Borrowed("globalroles")
+    }
+    
+    fn meta(&self) -> &kube::api::ObjectMeta {
+        self.metadata.as_ref().unwrap()
+    }
+    
+    fn meta_mut(&mut self) -> &mut kube::api::ObjectMeta {
+        self.metadata.as_mut().unwrap()
+    }
+
+    
+
+}
+
 impl IoCattleManagementv3GlobalRole {
     /// GlobalRole defines rules that can be applied to the local cluster and or every downstream cluster.
     pub fn new() -> IoCattleManagementv3GlobalRole {

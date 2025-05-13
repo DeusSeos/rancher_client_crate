@@ -9,6 +9,7 @@
  */
 
 use crate::models;
+use kube::Resource;
 use serde::{Deserialize, Serialize};
 use serde_diff::SerdeDiff;
 
@@ -38,7 +39,7 @@ impl IoCattleManagementv3Cluster {
         IoCattleManagementv3Cluster {
             api_version: None,
             kind: None,
-            spec: Box::new(spec),
+            spec,
             status: None,
             metadata: None,
         }

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **kind** | Option<**String**> | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds | [optional]
 **spec** | [**models::IoCattleManagementv3ClusterSpec**](ioCattleManagementv3Cluster_spec.md) |  | 
 **status** | Option<[**models::IoCattleManagementv3ClusterStatus**](ioCattleManagementv3Cluster_status.md)> |  | [optional]
-**metadata** | Option<[**models::IoK8sApimachineryPkgApisMetaV1ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
+**metadata** | Option<[**kube::api::ObjectMeta**](ioK8sApimachineryPkgApisMetaV1ObjectMeta.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
