@@ -795,6 +795,7 @@ pub enum ReplaceManagementCattleIoV3RoleTemplateError {
 
 
 /// Create a Cluster
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_cluster(configuration: &configuration::Configuration, body: models::IoCattleManagementv3Cluster, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3ClusterSuccess>, Error<CreateManagementCattleIoV3ClusterError>> {
     let local_var_configuration = configuration;
 
@@ -843,6 +844,7 @@ pub async fn create_management_cattle_io_v3_cluster(configuration: &configuratio
 }
 
 /// create a GlobalRole
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, body: models::IoCattleManagementv3GlobalRole, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3GlobalRoleSuccess>, Error<CreateManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -894,6 +896,7 @@ pub async fn create_management_cattle_io_v3_global_role(configuration: &configur
 }
 
 /// create a GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, body: models::IoCattleManagementv3GlobalRoleBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3GlobalRoleBindingSuccess>, Error<CreateManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -945,6 +948,7 @@ pub async fn create_management_cattle_io_v3_global_role_binding(configuration: &
 }
 
 /// create a ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3ClusterRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<CreateManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -996,6 +1000,7 @@ pub async fn create_management_cattle_io_v3_namespaced_cluster_role_template_bin
 }
 
 /// create a Project
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3Project, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedProjectSuccess>, Error<CreateManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -1047,6 +1052,7 @@ pub async fn create_management_cattle_io_v3_namespaced_project(configuration: &c
 }
 
 /// create a ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, body: models::IoCattleManagementv3ProjectRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<CreateManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1098,6 +1104,7 @@ pub async fn create_management_cattle_io_v3_namespaced_project_role_template_bin
 }
 
 /// create a RoleTemplate
+#[async_backtrace::framed]
 pub async fn create_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, body: models::IoCattleManagementv3RoleTemplate, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<CreateManagementCattleIoV3RoleTemplateSuccess>, Error<CreateManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -1149,6 +1156,7 @@ pub async fn create_management_cattle_io_v3_role_template(configuration: &config
 }
 
 /// delete collection of GlobalRole
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_global_role(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionGlobalRoleSuccess>, Error<DeleteManagementCattleIoV3CollectionGlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -1220,6 +1228,7 @@ pub async fn delete_management_cattle_io_v3_collection_global_role(configuration
 }
 
 /// delete collection of GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_global_role_binding(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionGlobalRoleBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionGlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1291,6 +1300,7 @@ pub async fn delete_management_cattle_io_v3_collection_global_role_binding(confi
 }
 
 /// delete collection of ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1362,6 +1372,7 @@ pub async fn delete_management_cattle_io_v3_collection_namespaced_cluster_role_t
 }
 
 /// delete collection of Project
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_namespaced_project(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedProjectSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -1433,6 +1444,7 @@ pub async fn delete_management_cattle_io_v3_collection_namespaced_project(config
 }
 
 /// delete collection of ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3CollectionNamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1504,6 +1516,7 @@ pub async fn delete_management_cattle_io_v3_collection_namespaced_project_role_t
 }
 
 /// delete collection of RoleTemplate
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_collection_role_template(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<DeleteManagementCattleIoV3CollectionRoleTemplateSuccess>, Error<DeleteManagementCattleIoV3CollectionRoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -1575,6 +1588,7 @@ pub async fn delete_management_cattle_io_v3_collection_role_template(configurati
 }
 
 /// delete a GlobalRole
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3GlobalRoleSuccess>, Error<DeleteManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -1629,6 +1643,7 @@ pub async fn delete_management_cattle_io_v3_global_role(configuration: &configur
 }
 
 /// delete a GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3GlobalRoleBindingSuccess>, Error<DeleteManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1683,6 +1698,7 @@ pub async fn delete_management_cattle_io_v3_global_role_binding(configuration: &
 }
 
 /// delete a ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1737,6 +1753,7 @@ pub async fn delete_management_cattle_io_v3_namespaced_cluster_role_template_bin
 }
 
 /// delete a Project
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedProjectSuccess>, Error<DeleteManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -1791,6 +1808,7 @@ pub async fn delete_management_cattle_io_v3_namespaced_project(configuration: &c
 }
 
 /// delete a ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<DeleteManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -1845,6 +1863,7 @@ pub async fn delete_management_cattle_io_v3_namespaced_project_role_template_bin
 }
 
 /// delete a RoleTemplate
+#[async_backtrace::framed]
 pub async fn delete_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, dry_run: Option<&str>, grace_period_seconds: Option<i32>, orphan_dependents: Option<bool>, propagation_policy: Option<&str>, body: Option<models::IoK8sApimachineryPkgApisMetaV1DeleteOptions>) -> Result<ResponseContent<DeleteManagementCattleIoV3RoleTemplateSuccess>, Error<DeleteManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -1899,6 +1918,7 @@ pub async fn delete_management_cattle_io_v3_role_template(configuration: &config
 }
 
 /// list objects of kind ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_cluster_role_template_binding_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ClusterRoleTemplateBindingForAllNamespacesError>> {
     let local_var_configuration = configuration;
 
@@ -1970,6 +1990,7 @@ pub async fn list_management_cattle_io_v3_cluster_role_template_binding_for_all_
 }
 
 /// List objects of kind Cluster
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_clusters(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ClustersSuccess>, Error<ListManagementCattleIoV3ClustersError>> {
     let local_var_configuration = configuration;
 
@@ -2041,6 +2062,7 @@ pub async fn list_management_cattle_io_v3_clusters(configuration: &configuration
 }
 
 /// list objects of kind GlobalRole
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3GlobalRoleSuccess>, Error<ListManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -2112,6 +2134,7 @@ pub async fn list_management_cattle_io_v3_global_role(configuration: &configurat
 }
 
 /// list objects of kind GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ListManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2183,6 +2206,7 @@ pub async fn list_management_cattle_io_v3_global_role_binding(configuration: &co
 }
 
 /// list objects of kind ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ListManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2254,6 +2278,7 @@ pub async fn list_management_cattle_io_v3_namespaced_cluster_role_template_bindi
 }
 
 /// list objects of kind Project
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedProjectSuccess>, Error<ListManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -2325,6 +2350,7 @@ pub async fn list_management_cattle_io_v3_namespaced_project(configuration: &con
 }
 
 /// list objects of kind ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, namespace: &str, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ListManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2396,6 +2422,7 @@ pub async fn list_management_cattle_io_v3_namespaced_project_role_template_bindi
 }
 
 /// list objects of kind Project
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_project_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ProjectForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ProjectForAllNamespacesError>> {
     let local_var_configuration = configuration;
 
@@ -2467,6 +2494,7 @@ pub async fn list_management_cattle_io_v3_project_for_all_namespaces(configurati
 }
 
 /// list objects of kind ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_project_role_template_binding_for_all_namespaces(configuration: &configuration::Configuration, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, pretty: Option<&str>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesSuccess>, Error<ListManagementCattleIoV3ProjectRoleTemplateBindingForAllNamespacesError>> {
     let local_var_configuration = configuration;
 
@@ -2538,6 +2566,7 @@ pub async fn list_management_cattle_io_v3_project_role_template_binding_for_all_
 }
 
 /// list objects of kind RoleTemplate
+#[async_backtrace::framed]
 pub async fn list_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, pretty: Option<&str>, allow_watch_bookmarks: Option<bool>, r#continue: Option<&str>, field_selector: Option<&str>, label_selector: Option<&str>, limit: Option<i32>, resource_version: Option<&str>, resource_version_match: Option<&str>, send_initial_events: Option<bool>, timeout_seconds: Option<i32>, watch: Option<bool>) -> Result<ResponseContent<ListManagementCattleIoV3RoleTemplateSuccess>, Error<ListManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -2609,6 +2638,7 @@ pub async fn list_management_cattle_io_v3_role_template(configuration: &configur
 }
 
 /// partially update the specified GlobalRole
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3GlobalRoleSuccess>, Error<PatchManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -2663,6 +2693,7 @@ pub async fn patch_management_cattle_io_v3_global_role(configuration: &configura
 }
 
 /// partially update the specified GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3GlobalRoleBindingSuccess>, Error<PatchManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2717,6 +2748,7 @@ pub async fn patch_management_cattle_io_v3_global_role_binding(configuration: &c
 }
 
 /// partially update the specified ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<PatchManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2771,6 +2803,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_cluster_role_template_bind
 }
 
 /// partially update the specified Project
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedProjectSuccess>, Error<PatchManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -2825,6 +2858,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_project(configuration: &co
 }
 
 /// partially update the specified ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<PatchManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -2879,6 +2913,7 @@ pub async fn patch_management_cattle_io_v3_namespaced_project_role_template_bind
 }
 
 /// partially update the specified RoleTemplate
+#[async_backtrace::framed]
 pub async fn patch_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, body: Option<models::IoK8sApimachineryPkgApisMetaV1Patch>, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>, force: Option<bool>) -> Result<ResponseContent<PatchManagementCattleIoV3RoleTemplateSuccess>, Error<PatchManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -2933,6 +2968,7 @@ pub async fn patch_management_cattle_io_v3_role_template(configuration: &configu
 }
 
 /// read the specified GlobalRole
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3GlobalRoleSuccess>, Error<ReadManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -2977,6 +3013,7 @@ pub async fn read_management_cattle_io_v3_global_role(configuration: &configurat
 }
 
 /// read the specified GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ReadManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3021,6 +3058,7 @@ pub async fn read_management_cattle_io_v3_global_role_binding(configuration: &co
 }
 
 /// read the specified ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ReadManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3065,6 +3103,7 @@ pub async fn read_management_cattle_io_v3_namespaced_cluster_role_template_bindi
 }
 
 /// read the specified Project
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedProjectSuccess>, Error<ReadManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -3109,6 +3148,7 @@ pub async fn read_management_cattle_io_v3_namespaced_project(configuration: &con
 }
 
 /// read the specified ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ReadManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3153,6 +3193,7 @@ pub async fn read_management_cattle_io_v3_namespaced_project_role_template_bindi
 }
 
 /// read the specified RoleTemplate
+#[async_backtrace::framed]
 pub async fn read_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, pretty: Option<&str>, resource_version: Option<&str>) -> Result<ResponseContent<ReadManagementCattleIoV3RoleTemplateSuccess>, Error<ReadManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 
@@ -3197,6 +3238,7 @@ pub async fn read_management_cattle_io_v3_role_template(configuration: &configur
 }
 
 /// replace the specified GlobalRole
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_global_role(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3GlobalRole, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3GlobalRoleSuccess>, Error<ReplaceManagementCattleIoV3GlobalRoleError>> {
     let local_var_configuration = configuration;
 
@@ -3248,6 +3290,7 @@ pub async fn replace_management_cattle_io_v3_global_role(configuration: &configu
 }
 
 /// replace the specified GlobalRoleBinding
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_global_role_binding(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3GlobalRoleBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3GlobalRoleBindingSuccess>, Error<ReplaceManagementCattleIoV3GlobalRoleBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3299,6 +3342,7 @@ pub async fn replace_management_cattle_io_v3_global_role_binding(configuration: 
 }
 
 /// replace the specified ClusterRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_namespaced_cluster_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3ClusterRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingSuccess>, Error<ReplaceManagementCattleIoV3NamespacedClusterRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3350,6 +3394,7 @@ pub async fn replace_management_cattle_io_v3_namespaced_cluster_role_template_bi
 }
 
 /// replace the specified Project
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_namespaced_project(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3Project, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedProjectSuccess>, Error<ReplaceManagementCattleIoV3NamespacedProjectError>> {
     let local_var_configuration = configuration;
 
@@ -3401,6 +3446,7 @@ pub async fn replace_management_cattle_io_v3_namespaced_project(configuration: &
 }
 
 /// replace the specified ProjectRoleTemplateBinding
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_namespaced_project_role_template_binding(configuration: &configuration::Configuration, name: &str, namespace: &str, body: models::IoCattleManagementv3ProjectRoleTemplateBinding, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingSuccess>, Error<ReplaceManagementCattleIoV3NamespacedProjectRoleTemplateBindingError>> {
     let local_var_configuration = configuration;
 
@@ -3452,6 +3498,7 @@ pub async fn replace_management_cattle_io_v3_namespaced_project_role_template_bi
 }
 
 /// replace the specified RoleTemplate
+#[async_backtrace::framed]
 pub async fn replace_management_cattle_io_v3_role_template(configuration: &configuration::Configuration, name: &str, body: models::IoCattleManagementv3RoleTemplate, pretty: Option<&str>, dry_run: Option<&str>, field_manager: Option<&str>, field_validation: Option<&str>) -> Result<ResponseContent<ReplaceManagementCattleIoV3RoleTemplateSuccess>, Error<ReplaceManagementCattleIoV3RoleTemplateError>> {
     let local_var_configuration = configuration;
 

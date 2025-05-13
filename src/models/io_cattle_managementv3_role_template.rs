@@ -50,7 +50,7 @@ pub struct IoCattleManagementv3RoleTemplate {
     pub locked: Option<bool>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
     #[serde_diff(opaque)]
-    pub  metadata: Option<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>,
+    pub metadata: Option<models::IoK8sApimachineryPkgApisMetaV1ObjectMeta>,
     /// ProjectCreatorDefault if true, a binding with this RoleTemplate will be created for a user when they create a new project. ProjectCreatorDefault is only evaluated if the context of the RoleTemplate is set to project. Default to false.
     #[serde(rename = "projectCreatorDefault", skip_serializing_if = "Option::is_none")]
     pub project_creator_default: Option<bool>,
