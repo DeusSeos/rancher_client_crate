@@ -1,4 +1,4 @@
-# Rust API client for rancher_client
+# Rancher API Client in Rust
 
 Rancher API client to interact with the Rancher APIserver using Rust. Generated using the openapi spec file for RK-API with manual edits to include Clusters and from Openapi spec v2 to v3. Manual edits made after. 
 
