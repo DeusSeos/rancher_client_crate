@@ -9,3 +9,8 @@ extern crate reqwest;
 
 pub mod apis;
 pub mod models;
+
+
+pub fn default_api_version() -> Option<String> {
+    Some("management.cattle.io/v3".to_string())
+}

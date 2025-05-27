@@ -1,6 +1,6 @@
 [package]
 name = "rancher_client"
-version = "1.0.5"
+version = "1.0.6"
 authors = ["OpenAPI Generator team and contributors"]
 description = "Rancher API client for Rust using OpenAPI Generator and kube"
 repository = "https://github.com/DeusSeos/rancher_client_crate"
